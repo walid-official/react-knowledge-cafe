@@ -1,8 +1,8 @@
 const Bookmarktitle = ({bookTitle}) => {
     
     return (
-        <div>
-            <h2>{bookTitle.title}</h2>
+        <div className="bg-white p-4 my-2">
+            <h2 className="font-bold">{bookTitle.title}</h2>
         </div>
     );
 };

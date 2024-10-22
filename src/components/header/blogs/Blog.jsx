@@ -1,12 +1,13 @@
+
 import { CiBookmark } from "react-icons/ci";
-const Blog = ({blog,handleBookMarked}) => {
-    console.log(blog);
-    const {title,courseThumbnail,authorName,authorImageAvatar,postDate,readingTime,hasTag} = blog;
+const Blog = ({blog,handleBookMarked,handleReadingTime,btnStyle}) => {
+    const {id,title,courseThumbnail,authorName,authorImageAvatar,postDate,readingTime,hasTag} = blog;
+
     return (
         <div className="">
             
                 <div className="">
-                    <img className="w-[100%] h-[400px] object-cover" src={courseThumbnail} alt="" />
+                    <img className="w-[100%] lg:h-[400px] md:h-[300px] object-cover" src={courseThumbnail} alt="" />
 
                     <div className="flex justify-between py-6">
 
@@ -22,19 +23,20 @@ const Blog = ({blog,handleBookMarked}) => {
                         
                         <div className="flex gap-2 items-center">
                             <h2>{readingTime} min read</h2>
-                            <button onClick={() => handleBookMarked(blog)}><CiBookmark></CiBookmark></button>
+                            <button className={btnStyle ? 'text-red-400' : 'text-slate-500'} onClick={() => handleBookMarked(blog)}><CiBookmark></CiBookmark></button>
                         </div>
 
                     </div>    
                 </div>
                 <div className="">
-                    <h1 className="text-2xl font-bold mb-6">{title}</h1>
+                    <h1 className="md:text-2xl text-xl font-bold mb-6">{title}</h1>
                     <div className="flex gap-6 pb-4">
                         {
                             hasTag.map((tag,index) => <p key={index}>#{tag}</p>)
                         }
                     </div>
-                    <a href="" className="pb-6 block">Mark as read</a>        
+                    <button  className="pb-6 block text-purple-800 font-bold underline" onClick={() => handleReadingTime(readingTime,id)}>Mark as read</button>
+                            
                 </div>
             
         </div>
