@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "How to Get Your First Job as a Self-Taught Programmer: Guide for Beginners",
+    "courseThumbnail": "https://i.ibb.co/84Zfw2n/1.jpg",
+    "authorName": "John Doe",
+    "authorImageAvatar": "https://i.ibb.co/VvLNdLL/boy1.png",
+    "postDate": "2024-09-21",
+    "readingTime": 15,
+    "hasTag": ["JavaScript", "Beginner", "Web Development"]
+  },
+  {
+    "id": 2,
+    "title": "Mastering React: Essential Techniques for Building Modern Frontend Applications",
+    "courseThumbnail": "https://i.ibb.co/6N2dgnZ/2.png",
+    "authorName": "Jane Smith",
+    "authorImageAvatar": "https://i.ibb.co/7rFSJx5/girl1.jpg",
+    "postDate": "2024-08-15",
+    "readingTime": 20,
+    "hasTag": ["React", "Frontend", "JavaScript"]
+  },
+  {
+    "id": 3,
+    "title": "HTML & CSS for Beginners: Build Your First Web Page from Scratch",
+    "courseThumbnail": "https://i.ibb.co/RzGzcPg/3.png",
+    "authorName": "Alice Johnson",
+    "authorImageAvatar": "https://i.ibb.co/vwGwnhT/boy2.jpg",
+    "postDate": "2024-07-30",
+    "readingTime": 10,
+    "hasTag": ["HTML", "CSS", "Beginner"]
+  },
+  {
+    "id": 4,
+    "title": "Node.js API Development: Learn to Build Scalable Backend Services",
+    "courseThumbnail": "https://i.ibb.co/vvTfkcv/4.jpg",
+    "authorName": "Mark Wilson",
+    "authorImageAvatar": "https://i.ibb.co/Sn7zB4q/girl2.jpg",
+    "postDate": "2024-06-12",
+    "readingTime": 25,
+    "hasTag": ["Node.js", "API", "Backend"]
+  }
+]
